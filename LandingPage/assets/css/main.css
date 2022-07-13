@@ -1,0 +1,48 @@
+body {
+    background-color: #dff6ff;
+    background-image: url(../img/decoracion/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: right;
+
+}
+
+#barra {
+    display: flex;
+}
+
+.logo {
+    background-color: #06283d;
+    height: 100px;
+    width: 150px;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.nav {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+
+}
+
+.registro {
+    background-color: #06283d;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    height: 180px;
+    width: 260px;
+    color: white;
+}
+
+.registro h4 {
+    margin-top: 20px;
+    text-align: center;
+}
