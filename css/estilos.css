@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #011b1c;
+    background-color: #9decef;
     color: #06283D;
 }
 
@@ -72,9 +72,9 @@ body {
 }
 
 .btn-outline-success {
-    background-color: #1CB68E!important;
+    background-color: #1cb68dd8!important;
     color: #fff!important;
-    border-color:#2a044b!important;
+    border-color:#9ADACA!important;
     border-radius: 10px!important;
     width: 102px;
     font-weight: 800;
@@ -209,14 +209,13 @@ body {
     font-weight: 800;
 }
 
-.btn-3 {
-    background-color: #1CB68E!important;
+.btn-3:hover {
+    background-color: #1cb68dd8!important;
     border-color:#dff6fe!important;
-    border-radius: 10px;
 }
 
 .btn-4 {
-    background-color: #FFF!important;
+    background-color: rgb(255, 255, 255)!important;
     color: #06283D!important;
     border-color:#06283D!important;
     border-radius: 10px!important;
@@ -225,7 +224,7 @@ body {
 }
 
 .btn-4:hover {
-    background-color: #FFF!important;
+    background-color: rgba(255, 255, 255, 0.819)!important;
     border-color:#06283D!important;
     border-radius: 10px;
 }
