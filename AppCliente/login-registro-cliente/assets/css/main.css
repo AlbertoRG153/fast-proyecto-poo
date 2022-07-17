@@ -2,44 +2,48 @@ body {
     background-color: #dff6ff;
 }
 
-.nav {
-    background-color: #9adaca;
-    height: 50px;
-}
-
 .logo {
-    background-color: #06283d;
-    height: 70px;
-    width: 100px;
-    margin-left: auto;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    /* background-color: red; */
+    background-image: url('../img/decoracion/Ellipse\ 25.png');
+    height: 250px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .logo img {
-    width: 60%;
+    width: 35%;
 }
 
-.info {
+.logo-2 {
     /* background-color: cyan; */
-    height: 200px;
+    background-image: url('../img/decoracion/Ellipse\ 26.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 55px;
+    background-size: 250px;
+    height: 125px;
+    margin-left: 96;
     margin-top: 50px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.logo-2 img {
+    width: 80px;
+}
+
 
 .info img {
     width: 80px;
     margin-bottom: 20px;
 }
 
-.form-login {
+.formulario {
     /* background-color: pink; */
     margin-top: 20px;
     display: flex;
@@ -49,30 +53,29 @@ body {
 
 }
 
-.form-login p {
+.formulario p {
     font-weight: bold;
     margin-bottom: 3px;
 }
 
 .caja {
-    background-color: #d7e7ed;
     border: 0;
-    border-radius: 10px;
-    height: 50px;
+    border-radius: 30px;
+    height: 60px;
     margin-bottom: 20px;
     width: 100%;
-    padding-left: 5px;
+    padding-left: 20px;
 
 }
 
 .btn-login {
-    background-color: #1cb68e;
+    background-color: #06283d;
     color: #ffffff;
     font-size: 1.5rem;
 }
 
 .btn-login:hover {
-    background-color: #19a37e;
+    background-color: #0c3853;
 }
 
 .deco {
@@ -115,29 +118,33 @@ body {
 .registro {
     /* background-color: pink; */
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 .registro a {
-    color: #1cb68e;
+    color: #2d75e3;
+    text-decoration: none;
+
 }
 
 /* Estilos para rgistro de clientes */
-.info-2 {
+.info {
     /* background-color: cyan; */
     width: 70%;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.info-2 h1 {
+.info h1 {
     font-size: 2rem;
 }
 
-.info-2 p {
+.info p {
     font-size: 1.2rem;
 
 }
