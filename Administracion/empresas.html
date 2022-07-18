@@ -5,43 +5,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Motoristas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/7f6237947d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- MEMU LATERAL -->
-    <div id="menu">
-        <img src="assets/img/decoracion/Logo 1.png" alt="">
-        <div class="contenido-menu">
-            <h5>Administración FAST</h5>
-            <p>MENU</p>
-            <div class="info">
-                <a href="perfil.html">
-                    <div class="boton">Perfil</div>
-                </a>
+    <div class="principal">
+            <!-- MEMU LATERAL -->
+        <div id="menu">
+            <img src="assets/img/decoracion/Logo 1.png" alt="">
+            <div class="contenido-menu">
+                <h5>Administración FAST</h5>
+                <p>MENU</p>
+                <div class="info">
+                    <a href="perfil.html">
+                        <div class="boton">Perfil</div>
+                    </a>
+                </div>
+                <div class="info">
+                    <a href="ordenes.html">
+                        <div class="boton">Ordenes</div>
+                    </a>
+                </div>
+                <div class="info">
+                    <a href="motoristas.html">
+                        <div class="boton">Motoristas</div>
+                    </a>
+                </div>
+                <div class="info">
+                    <a href="productos.html">
+                        <div class="boton">Productos</div>
+                    </a>
+                </div>
+                <div class="info">
+                    <a href="empresas.html">
+                        <div class="boton">Empresas</div>
+                    </a>
+                </div>
             </div>
-            <div class="info">
-                <a href="ordenes.html">
-                    <div class="boton">Ordenes</div>
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg bg-light navbar-dark nav-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-2" href="#">
+                    <input class="form-control me-2 tam-label" type="text" placeholder="Buscar empresas, productos, clientes, etc." aria-label="buscar">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex inicio col-auto" role="search">
+                        <button class="btn btn-outline-success me-2" type="button"><i class="fa-solid fa-user"></i></button>
+                    <div class="me-4">
+                        <h5>Miguel Sanchez</h5>
+                        <p>Administrador</p>
+                    </div>
+                    <button class="btn btn-outline-success me-2" type="button"><i class="fa-solid fa-bell"></i></button>
+                    </form>
+                </div>
             </div>
-            <div class="info">
-                <a href="motoristas.html">
-                    <div class="boton">Motoristas</div>
-                </a>
-            </div>
-            <div class="info">
-                <a href="productos.html">
-                    <div class="boton">Productos</div>
-                </a>
-            </div>
-            <div class="info">
-                <a href="empresas.html">
-                    <div class="boton">Empresas</div>
-                </a>
+        </nav>
+
+        <footer style="height: 0px;"></footer>
+        <!--div class="me-4 py-4">
+            <h1 class="py-2">Todos las Empresas</h1>
+            <table class="table tablas py-4">
+                <thead>
+                <tr>
+                    <th scope="col">Empresa</th>
+                    <th scope="col">Orden</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Codigo de la empresa</th>
+                    <th scope="col">Ganancia</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Burger King</th>
+                    <td>Pendiente</td>
+                    <td>Hamburguesa Bacon</td>
+                    <td>010</td>
+                    <td>Lps. 145,000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Pizza Hut</th>
+                    <td>Entregada</td>
+                    <td>Pizza de jamon</td>
+                    <td>001</td>
+                    <td>Lps. 145,000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fridays</th>
+                    <td>Entregada</td>
+                    <td>Pollo Empanizado</td>
+                    <td>017</td>
+                    <td>Lps. 145,000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Little Caesars</th>
+                    <td>Entregada</td>
+                    <td>pizza Suprema</td>
+                    <td>017</td>
+                    <td>Lps. 145,000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Wendy's</th>
+                    <td>Entregada</td>
+                    <td>Papas fritas</td>
+                    <td>017</td>
+                    <td>Lps. 145,000.00</td>
+                </tr>
+                <tr>
+                    <th scope="row">Kentucky</th>
+                    <td>Entregada</td>
+                    <td>Pollo Frito</td>
+                    <td>017</td>
+                    <td>Lps. 145,000.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div-->
+
+            <!--registro-->
+        <div id="registrarse">
+            <div class="form">
+                <div class="mx-4 py-2">
+                    <h3 class="centro-btn">Por favor ingrese sus datos para poder registrarse</h3>
+                    <label class="pt-4" for="nombre">Nombre de la empresa</label>
+                    <input type="text" class="form-control" id="empresa" placeholder="Empresa">
+                    <label class="pt-4" for="servicios">Servicios que ofrece la empresa</label>
+                    <input type="text" class="form-control" id="servicios" placeholder="servicios">
+                    <label class="pt-4" for="web">Pagina Web</label>
+                    <input type="text" class="form-control" id="web" placeholder="Sitio web">
+                    <div class="diseño py-4">
+                        <div>
+                            <label class="" for="telefono">telefono</label>
+                            <input type="text" class="form-control mb-2" id="telefono" placeholder="Telefono fijo">
+                            <input type="text" class="form-control mb-2" id="celular" placeholder="Celular">
+                        </div>
+                        <div>
+                            <label class="" for="representante">Nombre del representante de la empresa</label>
+                            <input type="text" class="form-control mb-2" id="nombre" placeholder="Nombre">
+                            <input type="text" class="form-control mb-2" id="apellido" placeholder="Apellido">
+                        </div>
+                        <div>
+                            <label class="" for="representante">Direccion de la empresa</label>
+                            <input type="text" class="form-control mb-2" id="ciudad" placeholder="Ciudad">
+                            <input type="text" class="form-control mb-2" id="region" placeholder="region/provincia/estado">
+                        </div>
+                        <div>
+                            <label class="" for="representante">Informacion adicional</label>
+                            <input type="text" class="form-control mb-2" id="postal" placeholder="Codigo Postal">
+                            <input type="text" class="form-control mb-2" id="pais" placeholder="Pais">
+                        </div>
+                        <div>
+                            <label class="" for="tipo">Tipo de empresa</label>
+                            <input type="text" class="form-control" id="tipo" placeholder="tipo de empresa">
+                        </div>
+                        <div>
+                            <label class="" for="codigo">Codigo de la empresa</label>
+                            <input type="text" class="form-control" id="tipo" placeholder="ingrese el codigo">
+                        </div>
+                    </div>
+                    <div class="alinear">
+                        <button class="btn btn-2" type="button">
+                            Agregar
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
