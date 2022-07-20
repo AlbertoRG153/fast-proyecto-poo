@@ -1,4 +1,96 @@
 
+var Motoristas = [
+    {
+        nombre:"Juan",
+        apellido:"Sanchez",
+        codigo:001,
+        imagen:"img/",
+        ordenes:[
+            {
+                nombreProducto:"Pizza de Peperoni",
+                descripcion: "",
+                cantidad:2,
+                precio:0
+            },
+        ]
+    },
+    {
+        nombre:"Maritza",
+        apellido:"Jimenez",
+        codigo:115,
+        imagen:"img/",
+        ordenes:[
+
+            {
+                nombreProducto:"Pollo Empanizado",
+                descripcion: "",
+                cantidad:2,
+                precio:0
+            },
+        ]
+    },
+    {
+        nombre:"David",
+        apellido:"Herrera",
+        codigo:045,
+        imagen:"img/",
+        ordenes:[
+            {
+                nombreProducto:"Pollo Asado",
+                descripcion: "",
+                cantidad:2,
+                precio:0
+            },
+        ]
+    },
+    {
+        nombre:"Manuel",
+        apellido:"Osorto",
+        codigo:279,
+        imagen:"img/",
+        ordenes:[
+            {
+                nombreProducto:"Pollo Empanizado",
+                descripcion: "",
+                cantidad:2,
+                precio:0
+            },
+        ]
+    },
+    {
+        nombre:"Alexis",
+        apellido:"Cruz",
+        codigo:221,
+        imagen:"img/",
+        ordenes:[
+
+            {
+                nombreProducto:"Carne Guisada",
+                descripcion: "",
+                cantidad:2,
+                precio:0
+            },
+        ]
+    },
+    {
+        nombre:"Raul",
+        apellido:"Fonseca",
+        codigo:074,
+        imagen:"img/",
+        ordenes:[
+
+            {
+                nombreProducto:"Pizza de jamon",
+                descripcion: "",
+                cantidad:2,
+                precio:0
+            },
+        ]
+    },
+];
+
+
+
 var usuarios = [
     {
         nombre:"Luis",
@@ -10,26 +102,12 @@ var usuarios = [
                 cantidad:2,
                 precio:0
             },
-
-            {
-                nombreProducto:"Pollo Frito",
-                descripcion: "",
-                cantidad:2,
-                precio:0
-            }
         ]
     },
     {
         nombre:"Mainor",
         apellido:"Zuniga",
         ordenes:[
-            {
-                nombreProducto:"Carne Guisada",
-                descripcion: "",
-                cantidad:2,
-                precio:0
-            },
-
             {
                 nombreProducto:"Pollo Empanizado",
                 descripcion: "",
@@ -71,12 +149,14 @@ var categorias = [
                 productos:[
                     {
                         nombreProducto: "Pizza de Peperoni",
-                        descripcion: "",
-                        precio: 0
+                        descripcion: "La pizza de peperoni esta compuesta de peperoni, trositos de pollo, queso chedar y acaeitunas",
+                        imagen:"img/Pizza_peperoni.jpg",
+                        precio: 90.00
                     },
                     {
-                        nombreProducto: "Pizza con doble queso",
-                        descripcion: "",
+                        nombreProducto: "Pizza de jamon",
+                        descripcion: "La pizza de jamon, es esta compuesta con los ingredientes que son, el jamon, queso en sus orillas y aceitunas",
+                        imagen:"img/",
                         precio: 0
                     },
                     {
@@ -91,9 +171,9 @@ var categorias = [
                 imagen:"",
                 productos:[
                     {
-                        nombreProducto: "Pizza de jamon",
+                        nombreProducto: "Pizza con doble queso",
                         descripcion: "",
-                        precio: 0
+                        precio: 60.00
                     },
                     {
                         nombreProducto: "Pizza con vegetales",
@@ -139,9 +219,9 @@ var categorias = [
                 imagen:"",
                 productos:[
                     {
-                        nombreProducto: "PHamburguesa Bacon",
-                        descripcion: "",
-                        precio: 0
+                        nombreProducto: "Hamburguesa Bacon",
+                        descripcion: "La bacon es una hamburguesa frita rebozada en un panecillo, con una rodaja de lechuga, mayonesa y queso",
+                        precio: 90.00
                     },
                     {
                         nombreProducto: "hamburguesa king",
@@ -204,13 +284,14 @@ var categorias = [
         descripcion:"",
         empresas:[
             {
-                nombreEmpresa: "El patio",
+                nombreEmpresa: "El Patio",
                 imagen:"",
                 productos:[
                     {
                         nombreProducto: "Carne Guisada",
-                        descripcion: "",
-                        precio: 0
+                        descripcion: "Ingredientes carne de res guisada, con ensalada de tomate y avichuelas",
+                        imagen:" img/carne_guisada.jpg",
+                        precio: 50.00
                     },
                     {
                         nombreProducto: "Chuleta de cerdo",
@@ -234,7 +315,7 @@ var categorias = [
                         precio: 0
                     },
                     {
-                        nombreProducto: "pollo Empanisado",
+                        nombreProducto: "Pechuga de Pollo",
                         descripcion: "",
                         precio: 0
                     },
@@ -250,9 +331,10 @@ var categorias = [
                 imagen:"",
                 productos:[
                     {
-                        nombreProducto: "Pechuga de Pollo",
-                        descripcion: "",
-                        precio: 0
+                        nombreProducto: "pollo Empanizado",
+                        descripcion: "Sus ingredientes son pechuga de pollo empanizada, ensalada de lechuga, salsa ketchup y papas fritas.",
+                        imagen:" img/pollo-emp.jpg",
+                        precio: 50.00
                     },
                     {
                         nombreProducto: "Ensalada de Vegetales",
