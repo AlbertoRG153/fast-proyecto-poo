@@ -145,7 +145,8 @@ var categorias = [
         empresas:[
             {
                 nombreEmpresa: "pizza Hut",
-                imagen:"",
+                codigo:001,
+                imagen:"img/pizza_hut.png",
                 productos:[
                     {
                         nombreProducto: "Pizza de Peperoni",
@@ -168,7 +169,8 @@ var categorias = [
             },
             {
                 nombreEmpresa: "Little Caesars",
-                imagen:"",
+                codigo:001,
+                imagen:"img/little_caesars.png",
                 productos:[
                     {
                         nombreProducto: "Pizza con doble queso",
@@ -189,6 +191,7 @@ var categorias = [
             },
             {
                 nombreEmpresa: "Dominos",
+                codigo:001,
                 imagen:"",
                 productos:[
                     {
@@ -216,7 +219,8 @@ var categorias = [
         empresas:[
             {
                 nombreEmpresa: "Burger king",
-                imagen:"",
+                codigo:001,
+                imagen:"img/Burger_king.png",
                 productos:[
                     {
                         nombreProducto: "Hamburguesa Bacon",
@@ -236,8 +240,9 @@ var categorias = [
                 ]
             },
             {
-                nombreEmpresa: "Bigos",
-                imagen:"",
+                nombreEmpresa: "MC Donal's",
+                codigo:001,
+                imagen:"img/mcDonals.png",
                 productos:[
                     {
                         nombreProducto: "Hamburguesa Suprema ",
@@ -258,6 +263,7 @@ var categorias = [
             },
             {
                 nombreEmpresa: "Wendy's",
+                codigo:001,
                 imagen:"",
                 productos:[
                     {
@@ -284,8 +290,9 @@ var categorias = [
         descripcion:"",
         empresas:[
             {
-                nombreEmpresa: "El Patio",
-                imagen:"",
+                nombreEmpresa: "Friday's",
+                codigo:001,
+                imagen:"img/fridays.png",
                 productos:[
                     {
                         nombreProducto: "Carne Guisada",
@@ -300,14 +307,15 @@ var categorias = [
                     },
                     {
                         nombreProducto: "Pollo Asado",
-                        descripcion: "",
+                        descripcion: "Ingresientes este pollo esta hecho a la parrilla,con papas fritas y chile picante",
                         precio: 0
                     }
                 ]
             },
             {
                 nombreEmpresa: "Kentucky",
-                imagen:"",
+                codigo:001,
+                imagen:"img/kfc.png",
                 productos:[
                     {
                         nombreProducto: "Pollo Picante",
@@ -328,6 +336,7 @@ var categorias = [
             },
             {
                 nombreEmpresa: "Popeyes",
+                codigo:001,
                 imagen:"",
                 productos:[
                     {

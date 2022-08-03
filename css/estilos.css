@@ -252,8 +252,27 @@ body {
     grid-gap: 15px;
 }
 
+.detalles-fact{
+    background-color: #1CB68ECC;
+    color: #06283D;
+}
 
+.detalles-fact h5{
+    font-size: 23px;
+    font-weight: 800;
+}
 
+.perfil-mot {
+    background-color: #FFF;
+    color: #06283D;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.icono-mot {
+    font-size: 80px;
+}
 
 
 /*  `sm` applies to x-small devices (portrait phones, less than 576px)*/
