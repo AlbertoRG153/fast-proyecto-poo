@@ -20,30 +20,20 @@
             <div class="contenido-menu">
                 <h5>Administración FAST</h5>
                 <p>MENU</p>
-                <div class="info">
-                    <a href="perfil.html">
-                        <div class="boton">Perfil</div>
-                    </a>
+                <div class="info" onclick="irPerfil()">
+                    <div class="boton">Perfil</div>
                 </div>
-                <div class="info">
-                    <a href="ordenes.html">
-                        <div class="boton">Ordenes</div>
-                    </a>
+                <div class="info" onclick="irOrdenes()">
+                    <div class="boton">Ordenes</div>
                 </div>
-                <div class="info">
-                    <a href="motoristas.html">
-                        <div class="boton">Motoristas</div>
-                    </a>
+                <div class="info" onclick="irMotoristas()">
+                    <div class="boton">Motoristas</div>
                 </div>
-                <div class="info">
-                    <a href="productos.html">
-                        <div class="boton">Productos</div>
-                    </a>
+                <div class="info" onclick="irProductos()">
+                    <div class="boton active">Productos</div>
                 </div>
-                <div class="info">
-                    <a href="empresas.html">
-                        <div class="boton">Empresas</div>
-                    </a>
+                <div class="info" onclick="irEmpresas()">
+                    <div class="boton">Empresas</div>
                 </div>
             </div>
         </div>
@@ -52,19 +42,24 @@
         <nav class="navbar navbar-expand-lg bg-light navbar-dark nav-menu">
             <div class="container-fluid">
                 <a class="navbar-brand mx-2" href="#">
-                    <input class="form-control me-2 tam-label" type="text" placeholder="Buscar empresas, productos, clientes, etc." aria-label="buscar">
+                    <input class="form-control me-2 tam-label" type="text"
+                        placeholder="Buscar empresas, productos, clientes, etc." aria-label="buscar">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex inicio col-auto" role="search">
-                        <button class="btn btn-outline-success me-2" type="button"><i class="fa-solid fa-user"></i></button>
-                    <div class="me-4">
-                        <h5>Miguel Sanchez</h5>
-                        <p>Administrador</p>
-                    </div>
-                    <button class="btn btn-outline-success me-2" type="button"><i class="fa-solid fa-bell"></i></button>
+                        <button class="btn btn-outline-success me-2" type="button"><i
+                                class="fa-solid fa-user"></i></button>
+                        <div class="me-4">
+                            <h5>Miguel Sanchez</h5>
+                            <p>Administrador</p>
+                        </div>
+                        <button class="btn btn-outline-success me-2" type="button"><i
+                                class="fa-solid fa-bell"></i></button>
                     </form>
                 </div>
             </div>
@@ -72,7 +67,7 @@
 
         <footer style="height: 0px;"></footer>
 
-            <!--registro-->
+        <!--registro-->
         <div id="registrarse">
             <div class="form">
                 <div class="mx-4 py-2">
