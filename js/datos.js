@@ -39,7 +39,7 @@ var Motoristas = [
                 nombreProducto:"Pollo Asado",
                 descripcion: "",
                 cantidad:2,
-                precio:0
+                precio:85.00
             },
         ]
     },
@@ -51,7 +51,7 @@ var Motoristas = [
         ordenes:[
             {
                 nombreProducto:"Pollo Empanizado",
-                descripcion: "",
+                descripcion: "Pollo ",
                 cantidad:2,
                 precio:0
             },
@@ -131,7 +131,7 @@ var usuarios = [
                 nombreProducto:"Pizza de Peperoni",
                 descripcion: "",
                 cantidad:2,
-                precio:0
+                precio:90.00
             }
         ]
     }
@@ -152,18 +152,22 @@ var categorias = [
                         nombreProducto: "Pizza de Peperoni",
                         descripcion: "La pizza de peperoni esta compuesta de peperoni, trositos de pollo, queso chedar y acaeitunas",
                         imagen:"img/Pizza_peperoni.jpg",
+                        codigo: 00001,
                         precio: 90.00
                     },
                     {
                         nombreProducto: "Pizza de jamon",
                         descripcion: "La pizza de jamon, es esta compuesta con los ingredientes que son, el jamon, queso en sus orillas y aceitunas",
                         imagen:"img/",
+                        codigo: 00002,
                         precio: 0
                     },
                     {
-                        nombreProducto: "Alistas de pollo",
+                        nombreProducto: "Alitas de pollo",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00003,
+                        precio: 120.00
                     }
                 ]
             },
@@ -175,17 +179,23 @@ var categorias = [
                     {
                         nombreProducto: "Pizza con doble queso",
                         descripcion: "",
+                        imagen:"img/",
+                        codigo:00004,
                         precio: 60.00
                     },
                     {
                         nombreProducto: "Pizza con vegetales",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00005,
+                        precio: 105.00
                     },
                     {
                         nombreProducto: "Pan de ajo",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00006,
+                        precio: 45.00
                     }
                 ]
             },
@@ -197,17 +207,23 @@ var categorias = [
                     {
                         nombreProducto: "Pizza premium",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00007,
+                        precio: 200.00
                     },
                     {
                         nombreProducto: "ensalada de Vegetales",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo: 00010,
+                        precio: 85.00
                     },
                     {
                         nombreProducto: "Pizza Suprema",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo: 00011,
+                        precio: 150.00
                     }
                 ]
             }
@@ -225,17 +241,21 @@ var categorias = [
                     {
                         nombreProducto: "Hamburguesa Bacon",
                         descripcion: "La bacon es una hamburguesa frita rebozada en un panecillo, con una rodaja de lechuga, mayonesa y queso",
+                        imagen:"img/",
+                        codigo:00012,
                         precio: 90.00
                     },
                     {
-                        nombreProducto: "hamburguesa king",
+                        nombreProducto: "Hamburguesa King",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00013,
+                        precio: 130.00
                     },
                     {
                         nombreProducto: "Submarino Supremo",
                         descripcion: "",
-                        precio: 0
+                        precio: 150.00
                     }
                 ]
             },
@@ -247,17 +267,23 @@ var categorias = [
                     {
                         nombreProducto: "Hamburguesa Suprema ",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00014,
+                        precio: 105.00
                     },
                     {
                         nombreProducto: "Pepito",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00015,
+                        precio: 120.00
                     },
                     {
                         nombreProducto: "Hamburguesa con doble carne",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00016,
+                        precio: 150.00
                     }
                 ]
             },
@@ -267,19 +293,25 @@ var categorias = [
                 imagen:"",
                 productos:[
                     {
-                        nombreProducto: "PHamburguesa King",
+                        nombreProducto: "Hamburguesa Dave's",
                         descripcion: "",
+                        imagen:"img/",
+                        codigo:00017,
                         precio: 0
                     },
                     {
                         nombreProducto: "Pan encebollado",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00030,
+                        precio: 52.00
                     },
                     {
                         nombreProducto: "Hamburguesa mixta",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00031,
+                        precio: 98.00
                     }
                 ]
             }
@@ -298,17 +330,22 @@ var categorias = [
                         nombreProducto: "Carne Guisada",
                         descripcion: "Ingredientes carne de res guisada, con ensalada de tomate y avichuelas",
                         imagen:" img/carne_guisada.jpg",
+                        codigo: 00020,
                         precio: 50.00
                     },
                     {
                         nombreProducto: "Chuleta de cerdo",
-                        descripcion: "",
-                        precio: 0
+                        descripcion: "Contiene una chuleta de carne de cerdo, con chimichurri, tajaditas de platano y adereso",
+                        imagen:"img/",
+                        codigo:00021,
+                        precio: 145.00
                     },
                     {
                         nombreProducto: "Pollo Asado",
                         descripcion: "Ingresientes este pollo esta hecho a la parrilla,con papas fritas y chile picante",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00022,
+                        precio: 165.00
                     }
                 ]
             },
@@ -320,17 +357,23 @@ var categorias = [
                     {
                         nombreProducto: "Pollo Picante",
                         descripcion: "",
-                        precio: 0
+                        imagen:"",
+                        codigo:00023,
+                        precio: 170.00
                     },
                     {
                         nombreProducto: "Pechuga de Pollo",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00024,
+                        precio: 47.00
                     },
                     {
                         nombreProducto: "Deditos de Pollo",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00025,
+                        precio: 180.00
                     }
                 ]
             },
@@ -343,17 +386,22 @@ var categorias = [
                         nombreProducto: "pollo Empanizado",
                         descripcion: "Sus ingredientes son pechuga de pollo empanizada, ensalada de lechuga, salsa ketchup y papas fritas.",
                         imagen:" img/pollo-emp.jpg",
-                        precio: 50.00
+                        codigo:00026,
+                        precio: 65.00
                     },
                     {
                         nombreProducto: "Ensalada de Vegetales",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00027,
+                        precio: 80.00
                     },
                     {
                         nombreProducto: "Arroz con frijoles",
                         descripcion: "",
-                        precio: 0
+                        imagen:"img/",
+                        codigo:00032,
+                        precio: 32.00
                     }
                 ]
             }
