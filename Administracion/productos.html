@@ -20,20 +20,30 @@
             <div class="contenido-menu">
                 <h5>Administración FAST</h5>
                 <p>MENU</p>
-                <div class="info" onclick="irPerfil()">
+                <div onclick="irPerfil()">
                     <div class="boton">Perfil</div>
                 </div>
-                <div class="info" onclick="irOrdenes()">
+                <div onclick="irOrdenes()">
                     <div class="boton">Ordenes</div>
                 </div>
-                <div class="info" onclick="irMotoristas()">
+                <div onclick="irMotoristas()">
                     <div class="boton">Motoristas</div>
                 </div>
-                <div class="info" onclick="irProductos()">
-                    <div class="boton active">Productos</div>
+                <div>
+                    <div onclick="irProductos()">
+                        <div class="boton active">Productos</div>
+                    </div>
+                    <div class="btn-funciones">
+                        <p>- Agregar</p>
+                        <p>- Actualizar</p>
+                        <p>- Eliminar</p>
+                    </div>
                 </div>
-                <div class="info" onclick="irEmpresas()">
+                <div onclick="irEmpresas()">
                     <div class="boton">Empresas</div>
+                </div>
+                <div class="btn-salir">
+                    <p onclick="irLanding()">Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i></p>
                 </div>
             </div>
         </div>

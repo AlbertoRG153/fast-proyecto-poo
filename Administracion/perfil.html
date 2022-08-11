@@ -20,20 +20,30 @@
             <div class="contenido-menu">
                 <h5>Administración FAST</h5>
                 <p>MENU</p>
-                <div class="info" onclick="irPerfil()">
-                    <div class="boton active">Perfil</div>
+                <div>
+                    <div onclick="irPerfil()">
+                        <div class="boton active">Perfil</div>
+                    </div>
+                    <div class="btn-funciones">
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal">- Agregar</p>
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal">- Actualizar</p>
+                        <p>- Eliminar</p>
+                    </div>
                 </div>
-                <div class="info" onclick="irOrdenes()">
+                <div onclick="irOrdenes()">
                     <div class="boton">Ordenes</div>
                 </div>
-                <div class="info" onclick="irMotoristas()">
+                <div onclick="irMotoristas()">
                     <div class="boton">Motoristas</div>
                 </div>
-                <div class="info" onclick="irProductos()">
+                <div onclick="irProductos()">
                     <div class="boton">Productos</div>
                 </div>
-                <div class="info" onclick="irEmpresas()">
+                <div onclick="irEmpresas()">
                     <div class="boton">Empresas</div>
+                </div>
+                <div class="btn-salir">
+                    <p onclick="irLanding()">Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i></p>
                 </div>
             </div>
         </div>
@@ -49,6 +59,32 @@
             <div class="contenido-perfil">
 
             </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 

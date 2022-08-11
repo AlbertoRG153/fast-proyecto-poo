@@ -18,3 +18,7 @@ var irProductos = () => {
 var irEmpresas = () => {
     location.href = "empresas.html";
 }
+
+var irLanding = () => {
+    location.href = "../landing-administracion/index.html";
+}
