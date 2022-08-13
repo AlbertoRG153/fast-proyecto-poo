@@ -190,7 +190,7 @@ body {
 }
 
 #pag-productos {
-    /* display: none; */
+    display: none;
 }
 
 #pag-detalle-producto {
