@@ -13,40 +13,103 @@
 </head>
 
 <body>
-    <!-- MEMU LATERAL -->
-    <div id="menu">
-        <img src="assets/img/decoracion/Logo 1.png" alt="">
-        <div class="contenido-menu">
-            <h5>Administración FAST</h5>
-            <p>MENU</p>
-            <div class="info">
-                <a href="perfil.html">
-                    <div class="boton">Perfil</div>
-                </a>
-            </div>
-            <div class="info">
-                <a href="ordenes.html">
+    <div class="dividir">
+        <!-- MEMU LATERAL -->
+        <div id="menu">
+            <img src="assets/img/decoracion/Logo 1.png" alt="">
+            <div class="contenido-menu">
+                <h5>Administración FAST</h5>
+                <p>MENU</p>
+                <div>
+                    <div onclick="irPerfil()">
+                        <div class="boton active">Perfil</div>
+                    </div>
+                    <div class="btn-funciones">
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal">- Agregar</p>
+                        <p data-bs-toggle="modal" data-bs-target="#exampleModal">- Actualizar</p>
+                        <p>- Eliminar</p>
+                    </div>
+                </div>
+                <div onclick="irOrdenes()">
                     <div class="boton">Ordenes</div>
-                </a>
-            </div>
-            <div class="info">
-                <a href="motoristas.html">
+                </div>
+                <div onclick="irMotoristas()">
                     <div class="boton">Motoristas</div>
-                </a>
-            </div>
-            <div class="info">
-                <a href="productos.html">
+                </div>
+                <div onclick="irProductos()">
                     <div class="boton">Productos</div>
-                </a>
-            </div>
-            <div class="info">
-                <a href="empresas.html">
+                </div>
+                <div onclick="irEmpresas()">
                     <div class="boton">Empresas</div>
-                </a>
+                </div>
+                <div class="btn-salir">
+                    <p onclick="irLanding()">Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i></p>
+                </div>
             </div>
+        </div>
+
+        <div class="contenido">
+            <div class="portada">
+                <div class="nombre">
+                    <h1>Juan Perez</h1>
+                </div>
+            </div>
+            <div class="perfil"></div>
+            <div class="contenido-perfil">
+
+    <!--Perfil Administrador-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content detalles-fact">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Perfil del Administrador</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="px-2 mx-2">
+                    <div class="modelo">
+                        <div>
+                            <div class="perfil-mot centro-btn"><i class="fa-solid fa-user icono-mot"></i></div>
+                        </div>
+                        <div>
+                            <h1>¡Hola Miguel!</h1>
+                            <p>miguelrd@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="modelo">
+                        <h5>Nombre del Administrador:</h5>
+                        <p>Juan</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Apellido del Administrador:</h5>
+                        <p>Perez</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Identificacion:</h5>
+                        <p>01-2022-1122</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Numero Telefonico:</h5>
+                        <p>9898-5555</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
         </div>
     </div>
 
+
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
