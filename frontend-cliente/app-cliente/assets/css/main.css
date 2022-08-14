@@ -179,6 +179,131 @@ body {
 }
 
 /* Estilos detalle producto */
+.portada {
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.portada img {
+    width: 80%;
+}
+
+.contenido-producto {
+    background-color: #ffffff;
+    height: 520px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px;
+}
+
+#contar {
+    margin-top: 10px;
+    color: #000000;
+}
+
+.info-producto-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1cb68e;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.descripcion {
+    margin-top: 20px;
+}
+
+.btn-orden {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-orden button {
+    background-color: #1cb68e;
+    color: #ffffff;
+    font-size: 1.8rem;
+    height: 70px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+}
+
+
+.contador {
+    background-color: #dff6ff;
+    width: 150px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-contador {
+    background: none;
+    border: none;
+}
+
+.btn-contador i {
+    color: #1cb68e;
+    font-size: 2rem;
+}
+
+/* Estilos carrito de compras */
+
+.tarjeta-pedido {
+    display: flex;
+    background-color: #ffffff;
+    padding: 10px;
+    border: solid 2px #979696;
+
+}
+
+.tarjeta-pedido img {
+    width: 80px;
+    margin-right: 10px;
+
+}
+
+.tarjeta-pedido div {
+    width: 100%;
+}
+
+.btn-procesar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-procesar button {
+    background-color: #1cb68e;
+    color: #ffffff;
+    border: solid 2px #979696;
+    border-radius: 20px;
+}
+
+
+.info-pedido {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-pedido p {
+    color: #1cb68e;
+    text-decoration: underline;
+
+}
+
+.caja {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #1cb68e !important;
+}
 
 
 #pag-categorias {

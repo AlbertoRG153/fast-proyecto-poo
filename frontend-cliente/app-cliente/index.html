@@ -19,10 +19,10 @@
             <img src="assets/img/decoracion/Logo 1.png" alt="">
         </div>
         <div class="contenido">
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i onclick="irInicio()" class="fa-solid fa-house"></i>
+            <i onclick="irHistorial()" class="fa-solid fa-clock-rotate-left"></i>
+            <i onclick="irUsuario()" class="fa-solid fa-user"></i>
+            <i onclick="irCarrito()" class="fa-solid fa-cart-shopping"></i>
         </div>
     </div>
 
@@ -134,7 +134,7 @@
     <div id="pag-productos">
 
         <div class="titulo-productos">
-            <h1>Ordena tu comida fácil y rápido</h1>
+            <h1>Ordena tu producto fácil y rápido</h1>
             <img src="assets/img/decoracion/Repartidor.png" alt="">
         </div>
 
@@ -194,6 +194,28 @@
         <div id="detalle-producto">
             <div class="portada">
                 <img src="assets/img/productos/comida/burgerking/1.png" alt="">
+            </div>
+            <div class="contenido-producto">
+                <div>
+                    <h1>Hambuguesa de queso</h1>
+                </div>
+                <div class="info-producto-2">
+                    <p>L 150.00</p>
+                    <div class="contador">
+                        <button class="btn-contador" id="decr"><i class="fa-solid fa-circle-minus"></i></button>
+                        <p id="contar">0</p>
+                        <button class="btn-contador" id="incr"><i class="fa-solid fa-circle-plus"></i></button>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <h1>Descripcion</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, necessitatibus a consequatur
+                        magni debitis natus eveniet voluptas ea quos pariatur aperiam ipsum molestiae saepe placeat,
+                        magnam nemo. Tempora, neque est!</p>
+                </div>
+                <div class="btn-orden">
+                    <button>Agregar Orden</button>
+                </div>
             </div>
         </div>
     </div>
