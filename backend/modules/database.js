@@ -1,4 +1,5 @@
 var mongoose = require('mongoose');
+require("dotenv").config();
 //Nombre BD, spotify
 
 let bd = 'spotify';
@@ -11,8 +12,8 @@ class Database {
     }
 
     conectar() {
-        mongoose.connect(`mongodb://${host}:${port}/${bd}`)
-            .then(result => console.log('Se conecto a mongodb'))
+        mongoose.connect(process.env.MONGODB_URI)
+            .then(result => console.log('Se conecto a mongodb atlas'))
             .catch(error => console.log(error));
 
     }
