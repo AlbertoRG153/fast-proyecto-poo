@@ -112,6 +112,7 @@ body {
 }
 
 /* Estilos de empresas */
+
 #empresas {
     /* background-color: #006fba; */
     margin-top: 50px;
@@ -129,6 +130,7 @@ body {
 
 
 /* Estilos para productos */
+
 #productos {
     /* background-color: #006fba; */
     margin-top: 50px;
@@ -179,6 +181,7 @@ body {
 }
 
 /* Estilos detalle producto */
+
 .portada {
     /* background-color: cyan; */
     display: flex;
@@ -291,14 +294,10 @@ body {
     justify-content: space-between;
 }
 
-.info-pedido p {
+.btn-vermas {
     color: #1cb68e;
     text-decoration: underline;
 
-}
-
-.caja {
-    margin-bottom: 10px;
 }
 
 .btn-primary {
@@ -306,8 +305,132 @@ body {
 }
 
 
+/* Estilo de recibo */
+#recibo {
+    background-color: #ffffff;
+    height: 600px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px #979696;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn-recibo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 100px;
+}
+
+.btn-recibo button {
+    height: 50px;
+    width: 200px;
+    background-color: #1cb68e;
+    border-radius: 20px;
+    color: #ffffff;
+
+}
+
+.espaciar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nom-producto {
+    width: 25%;
+}
+
+.info-recibo {
+    border-top: solid 2px #979696;
+    padding-top: 20px;
+}
+
+.info-recibo h6 {
+    margin-bottom: 20px;
+}
+
+/* Estilos de historial */
+
+.tarjeta-historial {
+    background-color: #ffffff;
+    padding-left: 10px;
+    border: solid 2px #979696;
+    height: 80px;
+}
+
+.tarjeta-historial h5 {
+    margin-top: 10px;
+}
+
+.info-estado {
+    background-color: #1cb68e;
+    padding: 5px;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border: solid 2px #000000;
+}
+
+.info-estado h5 {
+    text-align: center;
+}
+
+.info-estado div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.info-estado img {
+    width: 10%;
+}
+
+
+
+.estado {
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-left: solid 3px #979696;
+
+}
+
+.estado img {
+    height: 60px;
+    width: 60px;
+}
+
+
+/* Estilos de perfil */
+
+.perfil {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-perfil {
+    /* background-color: cyan; */
+    padding-left: 20px;
+    margin-top: 20px;
+    height: 500px;
+}
+
+
+
+/* Paginas de inicio */
+
 #pag-categorias {
-    display: none;
+    display: block;
 }
 
 #pag-empresas {
@@ -320,4 +443,20 @@ body {
 
 #pag-detalle-producto {
     display: none;
+}
+
+/* Paginas de carrito */
+
+#pag-pedidos {
+    display: block;
+}
+
+#pag-recibo {
+    display: none;
+}
+
+/* Paginas de historial */
+
+#pag-historial {
+    display: block;
 }

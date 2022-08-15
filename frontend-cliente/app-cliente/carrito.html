@@ -25,28 +25,79 @@
         </div>
     </div>
 
-    <div class="info">
-        <h1>Pedidos</h1>
-    </div>
+    <div id="pag-pedidos">
+        <div class="info">
+            <h1>Pedidos</h1>
+        </div>
 
-    <div id="pedidos">
-        <div class="tarjeta-pedido">
-            <img src="assets/img/empresas/comida/1.png" alt="">
-            <div>
-                <div class="info-pedido">
-                    <h5>Pedido 1</h5>
-                    <p>Ver mas</p>
-                </div>
-                <div class="btn-procesar">
-                    <p>Total: L 240.00</p>
-                    <button data-bs-toggle="modal" data-bs-target="#modalTarjeta">Procesar orden</button>
+        <div id="pedidos">
+            <div class="tarjeta-pedido">
+                <img src="assets/img/empresas/comida/1.png" alt="">
+                <div>
+                    <div class="info-pedido">
+                        <h5>Pedido 1</h5>
+                        <p onclick="seleccionarOpcionCarrito(1)" class="btn-vermas">Ver mas</p>
+                    </div>
+                    <div class="btn-procesar">
+                        <p>Total: L 240.00</p>
+                        <button data-bs-toggle="modal" data-bs-target="#modalTarjeta">Procesar orden</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- RECIBO -->
+    <div id="pag-recibo">
 
-    <!-- Modal -->
+        <button onclick="seleccionarOpcionCarrito(2)" class="btn btn-primary ms-3 my-3"><i
+                class="fa-solid fa-arrow-left-long"></i></button>
+
+        <div id="recibo">
+            <h1 class="info mb-4">Pedido 1</h1>
+            <div class="espaciar">
+                <h3>Producto</h3>
+                <h3>Cantidad</h3>
+                <h3>Precio</h3>
+            </div>
+            <div>
+                <div class="espaciar">
+                    <p class="nom-producto">Hamburguesa de queso</p>
+                    <p>x1</p>
+                    <p>L120.00</p>
+                </div>
+                <div class="espaciar">
+                    <p class="nom-producto">Hamburguesa </p>
+                    <p>x1</p>
+                    <p>L 100.00</p>
+                </div>
+            </div>
+            <div class="espaciar info-recibo">
+                <div>
+                    <h6>Subtotal</h6>
+                    <h6>IMP%</h6>
+                    <h6>Comision de envio</h6>
+                    <h6>Total</h6>
+                </div>
+                <div>
+                    <p>L 220.00</p>
+                    <p>L 10.00</p>
+                    <p>L 10.00</p>
+                    <p>L 240.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-recibo">
+            <button data-bs-toggle="modal" data-bs-target="#modalTarjeta">Procesar orden</button>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modal de tarjeta -->
     <div class="modal fade" id="modalTarjeta" tabindex="-1" aria-labelledby="modalTarjetaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -56,11 +107,11 @@
                 </div>
                 <div class="modal-body">
                     <h5>Numero de Tarjeta:</h5>
-                    <input class="caja" type="text" placeholder="Numero de tarjeta">
+                    <input class="mb-3" type="text" placeholder="Numero de tarjeta">
                     <h5>Fecha de Vencimiento:</h5>
-                    <input class="caja" type="text" placeholder="DD/MM/AA">
+                    <input class="mb-3" type="text" placeholder="DD/MM/AA">
                     <h5>Codigo de Verificación:</h5>
-                    <input class="caja" type="text" placeholder="XXX">
+                    <input class="mb-3" type="text" placeholder="XXX">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
