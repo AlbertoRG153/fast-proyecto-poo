@@ -15,6 +15,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!--Landing Motoristas-->
+    <nav class="navbar navbar-expand-lg bg-light landing">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2" href="#">
+                <img src="img/logo3.png" class="logo-fst" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex principal col-auto" role="search">
+                <button id="ContSesion2" class="btn btn-3 mx-2" type="button" onclick="InicioSesion()">Registrarse</button>
+                <button id="ContRegistro2" class="btn btn-3 mx-2" type="button" onclick="RegistroMotoristas()">Iniciar Sesion</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="texto py-4 mx-4">¡Bienvenido a FAST!</h1>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3 px-4 tam-princp">
+            <div><h5 class="texto ">La Empresa lider en Servicio de Entregas</h5></div>
+            <div><img class="logo4" src="img/repartidor2.png" alt=""></div>
+        </div> 
+    </div>
+    <footer class="landing tam-landing"></footer>
+
+
+
+
+    <!--iniciar sesion2>
+    <div id="ContSesion">
+    </div-->
+
     <!--iniciar sesion-->
     <!--div id="inicio">
         <section class="datos">
@@ -54,6 +89,10 @@
                 </div>
             </div>
         </section>
+    </div-->
+
+    <!--registro2>
+    <div id="ContRegistro">
     </div-->
 
     <!--registro-->
@@ -99,6 +138,9 @@
         </section>
     </div-->
 
+    <!--Menu2>
+    <div id="Home"></div-->
+
     <!--Menu-->
     <!--div id="home">
         <section class="datos">
@@ -123,12 +165,12 @@
 
     <!--Perfil motorista-->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Launch demo modal
-    </button>
+    </button-->
     
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!--div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content detalles-fact">
             <div class="modal-header">
@@ -142,7 +184,7 @@
                             <div class="perfil-mot centro-btn"><i class="fa-solid fa-user icono-mot"></i></div>
                         </div>
                         <div>
-                            <h1>¡Hola Juan</h1>
+                            <h1>¡Hola Juan!</h1>
                             <p>juanperez@gmail.com</p>
                         </div>
                     </div>
@@ -169,7 +211,10 @@
             </div>
         </div>
         </div>
-    </div>
+    </div-->
+
+    <!--Ordenes Dispoibles2>
+    <div id="ContDisponibles"></div-->
 
     <!--Ordenes Dispoibles-->
     <!--div id="ordenes disponibles">
@@ -194,29 +239,29 @@
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                     </div>
@@ -228,11 +273,15 @@
         </section>
     </div-->
 
+    <!--Ordenes Entregadas2>
+    <div id="ContEntregadas">
+    </div-->
+
     <!--Ordenes Entregadas-->
     <!--div id="ordenes disponibles">
         <section class="ordenes">
             <div id="inicio-logo">
-                <img src="img/Logo3.png" class="logo-fst" alt="">
+                    <img src="img/Logo3.png" class="logo-fst" alt="">                
             </div>
             <div>
                 <h2 class="pt-4 mx-2">
@@ -247,33 +296,12 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="modelo">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <div class="card tarjeta">
                             <div class="card-body">
-                                <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
-                            </div>
-                        </div>
-                        <div class="card tarjeta">
-                            <div class="card-body">
-                                <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
-                            </div>
-                        </div>
-                        <div class="card tarjeta">
-                            <div class="card-body">
-                                <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
-                            </div>
-                        </div>
-                        <div class="card tarjeta">
-                            <div class="card-body">
-                                <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <img src="img/hamburguesa.png" class="card-img-top img-orden pb-2" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                     </div>
@@ -283,6 +311,10 @@
                 <button class="btn btn-3 mx-2" type="button">4 Ordenes Lps. 250.00</button>              
             </footer>
         </section>
+    </div-->
+
+    <!--Ordenes Tomadas2>
+    <div id="ContTomadas">
     </div-->
 
     <!--Ordenes Tomadas-->
@@ -308,29 +340,29 @@
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                         <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <p class="card-tittle">Hamburguesa Bacon</p>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                     </div>
@@ -342,7 +374,11 @@
         </section>
     </div-->
     
-    <!--Tomar Orden-->
+    <!--Detalle Orden2>
+    <div id="DetOrden">
+    </div-->
+
+    <!--Detalle Orden-->
     <!--div id="detalle-tomar-orden">
         <section class="ordenes">
             <img src="img/carne_guisada.jpg" class="detalles-img" alt="">
@@ -374,8 +410,12 @@
             </div>
         </section>
     </div-->
+    
+    <!--Tomar Orden entregada2 >
+    <div id="DetEntregas">
+    </div-->
 
-    <!--Orden entregada -->
+    <!--Tomar Orden entregada -->
     <!--div id="detalle orden entregada">
         <section class="ordenes">
             <img src="img/carne_guisada.jpg" class="detalles-img" alt="">

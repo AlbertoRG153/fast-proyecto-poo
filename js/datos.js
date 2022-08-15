@@ -1,5 +1,5 @@
-
-var Motoristas = [
+/*
+var MotoristasInicial = [
     {
         nombre:"Juan",
         apellido:"Sanchez",
@@ -26,7 +26,7 @@ var Motoristas = [
                 descripcion: "",
                 cantidad:2,
                 precio:0
-            },
+            }
         ]
     },
     {
@@ -40,7 +40,7 @@ var Motoristas = [
                 descripcion: "",
                 cantidad:2,
                 precio:85.00
-            },
+            }
         ]
     },
     {
@@ -54,7 +54,7 @@ var Motoristas = [
                 descripcion: "Pollo ",
                 cantidad:2,
                 precio:0
-            },
+            }
         ]
     },
     {
@@ -69,7 +69,7 @@ var Motoristas = [
                 descripcion: "",
                 cantidad:2,
                 precio:0
-            },
+            }
         ]
     },
     {
@@ -84,14 +84,14 @@ var Motoristas = [
                 descripcion: "",
                 cantidad:2,
                 precio:0
-            },
+            }
         ]
-    },
+    }
 ];
 
 
 
-var usuarios = [
+var usuariosInicial = [
     {
         nombre:"Luis",
         apellido:"Rodriguez",
@@ -101,7 +101,7 @@ var usuarios = [
                 descripcion: "",
                 cantidad:2,
                 precio:0
-            },
+            }
         ]
     },
     {
@@ -138,7 +138,7 @@ var usuarios = [
 ];
 
 
-var categorias = [
+var categoriasInicial = [
     {
         nombreCategoria:"Pizzas",
         descripcion:"",
@@ -406,7 +406,7 @@ var categorias = [
                 ]
             }
         ]
-    },
+    }
 ];
 
-
+*/
