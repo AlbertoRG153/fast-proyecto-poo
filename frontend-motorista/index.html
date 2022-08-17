@@ -15,150 +15,519 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!--Landing Motoristas-->
+    <nav class="navbar navbar-expand-lg bg-light landing">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2" href="#">
+                <img src="img/logo3.png" class="logo-fst" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex principal col-auto" role="search">
+                <button id="ContSesion2" class="btn btn-3 mx-2" type="button" onclick="InicioSesion()">Registrarse</button>
+                <button id="ContRegistro2" class="btn btn-3 mx-2" type="button" onclick="RegistroMotoristas()">Iniciar Sesion</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h1 class="texto py-4 mx-4">¡Bienvenido a FAST!</h1>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3 px-4 tam-princp">
+            <div><h5 class="texto ">La Empresa lider en Servicio de Entregas</h5></div>
+            <div><img class="logo4" src="img/repartidor2.png" alt=""></div>
+        </div> 
+    </div>
+    <footer class="landing tam-landing"></footer>
+
+
+
+
+    <!--iniciar sesion2>
+    <div id="ContSesion">
+    </div-->
+
     <!--iniciar sesion-->
     <!--div id="inicio">
-        <section id="datos">
-            <img id="food" src="img/food.png" alt="">
-            <h1>Bienvenido</h1>
-            <h5>Por favor inicia sesión para continuar</h5>
-            <label for="correo">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
-            <label for="correo">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
-            <a href="#" id="help-link">Olvidaste la Contraseña?</a>
-            <button class="btn btn-outline-success " type="button">Ingresar</button>
-            <div>
-            <hr>O iniciar sesión con
-            <hr>
+        <section class="datos">
+            <div id="inicio-logo" class="mb-2">
+                <img src="img/logo3.png" class="logo-fst" alt="">
             </div>
-            <button class="btn btn-outline-success " type="button">
-                <i class="fa-brands fa-apple"></i>
-                Iniciar sesión con Apple
-            </button>
-            <button class="btn btn-outline-success " type="button">
-                <i class="fa-brands fa-google"></i>
-                Iniciar sesión con Google
-            </button>
+            <div class="mx-4 py-2">
+                <img class="centro-btn py-3" id="food" src="img/food.png" alt="">
+                <h1 class="centro-btn">Bienvenido</h1>
+                <h4 class="centro-btn">Por favor inicia sesión para continuar</h4>
+                <label class="pt-4" for="correo">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
+                <label class="pt-4" for="correo">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                <a href="#" id="ayuda">Olvidaste la Contraseña?</a>
+                <div class="centro-btn py-4 my-4">
+                    <button class="btn btn-3" type="button">
+                        Ingresar
+                    </button>
+                </div>
+                <div class="info-2">
+                <hr>
+                <h4>------ O Iniciar sesion con ------</h4>
+                <hr>
+                </div>
+                <div class="centro-btn my-2">
+                    <button class="btn btn-2" type="button">
+                        <i class="fa-brands fa-apple"></i>
+                        Iniciar sesion con Apple    
+                    </button>
+                </div>
+                <div class="centro-btn my-2">
+                    <button class="btn btn-2" type="button">
+                        <i class="fa-brands fa-google"></i>
+                        Iniciar sesion con Google
+                    </button>
+                </div>
+            </div>
         </section>
+    </div-->
+
+    <!--registro2>
+    <div id="ContRegistro">
     </div-->
 
     <!--registro-->
     <!--div id="registrarse">
-        <section id="datos">
-            <h1>Registrate</h1>
-            <h5>Por favor ingrese sus datos para poder registrarse</h5>
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
-            <label for="correo">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
-            <label for="contraseña">Ingrese nuevamente la contraseña</label>
-            <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
-            <button class="btn btn-outline-success " type="button">Registrarse</button>
-            <div>
-            <hr>O Registrarse con
-            <hr>
+        <section class="datos">
+            <div id="inicio-logo" class="mb-2">
+                <img src="img/logo3.png" class="logo-fst" alt="">
             </div>
-            <button class="btn btn-outline-success " type="button">
-                <i class="fa-brands fa-apple"></i>
-                Registrate con Apple
-            </button>
-            <button class="btn btn-outline-success " type="button">
-                <i class="fa-brands fa-google"></i>
-                Registrate con Google
-            </button>
+            <div class="mx-4 py-2">
+                <h1 class="centro-btn">Registrate</h1>
+                <h3 class="centro-btn">Por favor ingrese sus datos para poder registrarse</h3>
+                <label class="pt-4" for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre Completo">
+                <label class="pt-4" for="correo">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Correo Electronico">
+                <label class="pt-4" for="contraseña">Contraseña</label>
+                <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                <label class="pt-4" for="contraseña">Ingrese nuevamente la contraseña</label>
+                <input type="password" class="form-control" id="contraseña" placeholder="Contraseña">
+                <div class="centro-btn my-4">
+                    <button class="btn btn-3" type="button">
+                        Registrarse
+                    </button>
+                </div>
+                <div class="info-2">
+                <hr>
+                <h4>------  O Registrarse con  ------</h4>
+                <hr>
+                </div>
+                <div class="centro-btn my-2">
+                    <button class="btn btn-2" type="button">
+                        <i class="fa-brands fa-apple"></i>
+                        Registrate con Apple
+                    </button>
+                </div>
+                <div class="centro-btn my-2">
+                    <button class="btn btn-2" type="button">
+                        <i class="fa-brands fa-google"></i>
+                        Registrate con Google
+                    </button>
+                </div>
+            </div>
         </section>
     </div-->
+
+    <!--Menu2>
+    <div id="Home"></div-->
 
     <!--Menu-->
     <!--div id="home">
         <section class="datos">
-            <div id="inicio-logo">
-                <img src="img/Logo.jpeg" class="logo-fst" alt="">
+            <div id="inicio-logo" class="mb-4">
+                <img src="img/logo3.png" class="logo-fst" alt="">
             </div>
-            <h4 class="py-4">Otras Opciones</h4>
-            <h1>Entrega de productos</h1>
-            <img id="inicioHam" src="img/inicioham.png" alt="">
+            <h3 class="py-3">Otras Opciones</h3>
+            <h1>Entrega de Productos</h1>
+            <div class="centro-btn">
+                <img class="py-4" id="inicioHam" src="img/inicioham.png" alt="">
+            </div>
             <div class="tam-boton">
                 <button class="btn btn-outline-success mx-2" type="button">Ordenes Disponibles</button>
                 <button class="btn btn-outline-success mx-2 " type="button">Ordenes Tomadas</button>
                 <button class="btn btn-outline-success mx-2" type="button">Ordenes Entregadas</button>
+            </div>
+            <div class="centro-btn py-3">
+                <button class="btn btn-4" type="button">Empezar</button>
             </div>       
-            <button class="btn btn-2 mx-4" type="button">Empezar</button>
         </section>
     </div-->
 
+    <!--Perfil motorista-->
+    <!-- Button trigger modal -->
+    <!--button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button-->
+    
+    <!-- Modal -->
+    <!--div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content detalles-fact">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Perfil del Motorista</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="px-2 mx-2">
+                    <div class="modelo">
+                        <div>
+                            <div class="perfil-mot centro-btn"><i class="fa-solid fa-user icono-mot"></i></div>
+                        </div>
+                        <div>
+                            <h1>¡Hola Juan!</h1>
+                            <p>juanperez@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="modelo">
+                        <h5>Nombre del Motorista:</h5>
+                        <p>Juan</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Apellido del Motorista:</h5>
+                        <p>Perez</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Identificacion:</h5>
+                        <p>01-2022-1122</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Numero Telefonico:</h5>
+                        <p>9898-7878</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div-->
+
+    <!--Ordenes Dispoibles2>
+    <div id="ContDisponibles"></div-->
+
     <!--Ordenes Dispoibles-->
     <!--div id="ordenes disponibles">
-        <section class="datos">
+        <section class="ordenes">
             <div id="inicio-logo">
-                <img src="img/Logo.jpeg" class="logo-fst" alt="">
+                <img src="img/Logo3.png" class="logo-fst" alt="">
             </div>
             <div>
-                <h2 class="pt-4 mx-2 me-4">
+                <h2 class="pt-4 mx-2">
                     Ordenes Disponibles
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass px-4"></i>
                 </h2>   
             </div>
             <h5 class="mx-4">El mejor servicio de entregas</h5>
-            <div class="pb-4">
-                <button class="btn btn-2" type="button"><i class="fa-solid fa-house"></i></button>
-                <button class="btn btn-2" type="button"><i class="fa-solid fa-heart"></i></button>  
+            <div class="pb-2 centro-btn">
+                <button class="btn btn-2 mx-1" type="button"><i class="fa-solid fa-house"></i></button>
+                <button class="btn btn-2 mx-1" type="button"><i class="fa-solid fa-heart"></i></button>  
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <div class="card tarjeta my-3">
+                    <div class="modelo">
+                        <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <h5 class="card-tittle">Hamburguesa Bacon</h5>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
-                        <div class="card tarjeta my-3">
+                        <div class="card tarjeta">
                             <div class="card-body">
                                 <img src="img/hamburguesa.png" class="img-orden" alt="">
-                                <h5 class="card-tittle">Hamburguesa Bacon</h5>
-                                <p class="card-text">Lps. 90.00</p>
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="img-orden" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="img-orden" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn btn-2 mx-2" type="button">4 Ordenes Lps. 250.00</button>              
+            <footer class="centro-btn py-4">
+                <button class="btn btn-3 mx-2" type="button">4 Ordenes Lps. 250.00</button>              
+            </footer>
         </section>
     </div-->
 
-    <div id="detalle orden">
-        <section class="datos">
+    <!--Ordenes Entregadas2>
+    <div id="ContEntregadas">
+    </div-->
+
+    <!--Ordenes Entregadas-->
+    <!--div id="ordenes disponibles">
+        <section class="ordenes">
+            <div id="inicio-logo">
+                    <img src="img/Logo3.png" class="logo-fst" alt="">                
+            </div>
+            <div>
+                <h2 class="pt-4 mx-2">
+                    Ordenes Entregadas
+                    <i class="fa-solid fa-magnifying-glass px-4"></i>
+                </h2>   
+            </div>
+            <h5 class="mx-4">El mejor servicio de entregas</h5>
+            <div class="pb-2 centro-btn">
+                <button class="btn btn-2 mx-1" type="button"><i class="fa-solid fa-house"></i></button>
+                <button class="btn btn-2 mx-1" type="button"><i class="fa-solid fa-heart"></i></button>  
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="card-img-top img-orden pb-2" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="centro-btn py-4">
+                <button class="btn btn-3 mx-2" type="button">4 Ordenes Lps. 250.00</button>              
+            </footer>
+        </section>
+    </div-->
+
+    <!--Ordenes Tomadas2>
+    <div id="ContTomadas">
+    </div-->
+
+    <!--Ordenes Tomadas-->
+    <!--div id="ordenes disponibles">
+        <section class="ordenes">
+            <div id="inicio-logo">
+                <img src="img/Logo3.png" class="logo-fst" alt="">
+            </div>
+            <div>
+                <h2 class="pt-4 mx-2">
+                    Ordenes Tomadas
+                    <i class="fa-solid fa-magnifying-glass px-4"></i>
+                </h2>   
+            </div>
+            <h5 class="mx-4">El mejor servicio de entregas</h5>
+            <div class="pb-2 centro-btn">
+                <button class="btn btn-2 mx-1" type="button"><i class="fa-solid fa-house"></i></button>
+                <button class="btn btn-2 mx-1" type="button"><i class="fa-solid fa-heart"></i></button>  
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modelo">
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="img-orden" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="img-orden" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="img-orden" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                        <div class="card tarjeta">
+                            <div class="card-body">
+                                <img src="img/hamburguesa.png" class="img-orden" alt="">
+                                <p class="card-tittle text-center">Hamburguesa Bacon</p>
+                                <p class="card-text text-center">Lps. 90.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="centro-btn py-4">
+                <button class="btn btn-3 mx-2" type="button">4 Ordenes Lps. 250.00</button>              
+            </footer>
+        </section>
+    </div-->
+    
+    <!--Detalle Orden2>
+    <div id="DetOrden">
+    </div-->
+
+    <!--Detalle Orden-->
+    <!--div id="detalle-tomar-orden">
+        <section class="ordenes">
             <img src="img/carne_guisada.jpg" class="detalles-img" alt="">
-            <div class="mx-3 py-3">
+            <div class="mx-3 py-4">
+                <h2>Carne Guisada</h2>
+                <h2>Lps. 50.00</h2>
+                <p class="py-2">Carne de res guisada con ensalada de tomate y avichuelas</p>
+                <div class="info py-2">
+                    <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h4 class="px-2">Col. Hato de en medio</h4>
+                </div>
+                <div class="info py-2">
+                    <div class="icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h4 class="px-2">20 minutos</h4>
+                </div>
+                <div class="info py-2">
+                    <div class="icon">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                    <h4 class="px-2">Kentucky</h4>
+                </div>
+                <div class="centro-btn">
+                    <button class="btn btn-3 my-4" type="button">Tomar orden lps. 90.00</button>
+                </div>
+            </div>
+        </section>
+    </div-->
+    
+    <!--Tomar Orden entregada2 >
+    <div id="DetEntregas">
+    </div-->
+
+    <!--Tomar Orden entregada -->
+    <!--div id="detalle orden entregada">
+        <section class="ordenes">
+            <img src="img/carne_guisada.jpg" class="detalles-img" alt="">
+            <div class="mx-3 py-2">
                 <h2>Carne Guisada</h2>
                 <h2>Lps. 50.00</h2>
                 <p>Carne de res guisada con ensalada de tomate ya avichuelas</p>
-                <div>
+                <div class="info">
+                    <div class="icon">
                     <i class="fa-solid fa-location-dot"></i>
-                    <h4>Col. Hato de en medio</h4>
+                    </div>
+                    <h4 class="px-2">Col. Hato de en medio</h4>
                 </div>
-                <div>
-                    <i class="fa-solid fa-utensils"></i>
-                    <h4>20 minutos</h4>
+                <div class="info">
+                    <div class="icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h4 class="px-2">20 minutos</h4>
                 </div>
-                <div>
-                    <i class="fa-solid fa-kitchen-set"></i>
-                    <h4>Kentucky</h4>
+                <div class="info">
+                    <div class="icon">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                    <h4 class="px-2">Kentucky</h4>
                 </div>
-                <button class="btn btn-2 mx-2" type="button">Tomar Orden Lps. 90.00</button>
+                <button class="btn btn-4 mx-2 my-2" type="button">Tomada</button>
+                <button class="btn btn-4 mx-2 my-2" type="button">En Camino</button>
+                <button class="btn btn-4 mx-2 my-2" type="button">En el Origen</button>
+                <button class="btn btn-4 mx-2 my-2" type="button">En Destino</button>
+                <div class="centro-btn">
+                    <button class="btn btn-3 my-2" type="button">Entregar Orden</button>
+                </div>
             </div>
-            
         </section>
-    </div>
+    </div-->
+
+    <!--Factura -->
+    <!-- Button trigger modal >
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button -->
+    
+    <!-- Modal -->
+    <!--div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content detalles-fact">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Factura del producto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="px-2 mx-2">
+                    <div class="modelo">
+                        <h5>Producto:</h5>
+                        <p>Pizza de Peperoni</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Empresa de Entrega:</h5>
+                        <p>Fast</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Empresa del Producto:</h5>
+                        <p>Pizza Hut</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Motorista:</h5>
+                        <p>Juan</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Direccion:</h5>
+                        <p>Col. las brisas frente al Metromall</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Nombre del Cliente:</h5>
+                        <p>Miguel</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Subtotal:</h5>
+                        <p>Lps. 76.50</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>ISV (15%):</h5>
+                        <p>Lps. 13.50</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Total a Pagar:</h5>
+                        <p>Lps. 90.00</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Comision del Motorista (20%):</h5>
+                        <p>Lps. 18.00</p>
+                    </div>
+                    <div class="modelo">
+                        <h5>Comision de Administracion (10%):</h5>
+                        <p>Lps. 9.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-success">Guardar</button>
+            </div>
+        </div>
+        </div>
+    </div-->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="js/controlador.js"></script>
+    <script src="js/datos.js"></script>
     
 </body>
 </html>
