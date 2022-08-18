@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/249aa6fc90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="assets/img/decoracion/Logo 1.png" alt="">
+        </div>
+        <div class="contenido">
+            <i onclick="irInicio()" class="fa-solid fa-house"></i>
+            <i onclick="irHistorial()" class="fa-solid fa-clock-rotate-left"></i>
+            <i onclick="irCarrito()" class="fa-solid fa-cart-shopping"></i>
+            <i onclick="irUsuario()" class="fa-solid fa-user"></i>
+        </div>
+    </div>
+
+    <!-- HISTORIAL -->
+    <div id="pag-historial">
+        <div class="info">
+            <h1>Historial de compras</h1>
+        </div>
+
+        <div class="info-estado">
+            <h5>Estados de las entregas</h5>
+            <div>
+                <img src="assets/img/decoracion/Sin Tomar.png" alt="">
+                <p>Sin tomar</p>
+                <img src="assets/img/decoracion/Camino.png" alt="">
+                <p>En camino</p>
+                <img src="assets/img/decoracion/Entregado.png" alt="">
+                <p>Entregado</p>
+            </div>
+        </div>
+
+        <div id="historial">
+            <div class="tarjeta-historial espaciar">
+                <div>
+                    <h5>Pedido 1</h5>
+                    <div class="espaciar">
+                        <p>Total: L 240.00</p>
+                        <p onclick="seleccionarOpcionHistorial(1)" class="ms-5 btn-vermas">Ver mas</p>
+                    </div>
+                </div>
+                <div class="estado">
+                    <img src="assets/img/decoracion/Entregado.png" alt="">
+                </div>
+            </div>
+            <div class="tarjeta-historial espaciar">
+                <div>
+                    <h5>Pedido 2</h5>
+                    <div class="espaciar">
+                        <p>Total: L 240.00</p>
+                        <p onclick="seleccionarOpcionHistorial(1)" class="ms-5 btn-vermas">Ver mas</p>
+                    </div>
+                </div>
+                <div class="estado">
+                    <img src="assets/img/decoracion/Camino.png" alt="">
+                </div>
+            </div>
+            <div class="tarjeta-historial espaciar">
+                <div>
+                    <h5>Pedido 3</h5>
+                    <div class="espaciar">
+                        <p>Total: L 240.00</p>
+                        <p onclick="seleccionarOpcionHistorial(1)" class="ms-5 btn-vermas">Ver mas</p>
+                    </div>
+                </div>
+                <div class="estado">
+                    <img src="assets/img/decoracion/Sin Tomar.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RECIBO -->
+    <div id="pag-recibo">
+        <button onclick="seleccionarOpcionHistorial(2)" class="btn btn-primary ms-3 my-3"><i
+                class="fa-solid fa-arrow-left-long"></i></button>
+
+        <div id="recibo">
+            <h1 class="info mb-4">Pedido 1</h1>
+            <div class="espaciar">
+                <h3>Producto</h3>
+                <h3>Cantidad</h3>
+                <h3>Precio</h3>
+            </div>
+            <div>
+                <div class="espaciar">
+                    <p class="nom-producto">Hamburguesa de queso</p>
+                    <p>x1</p>
+                    <p>L120.00</p>
+                </div>
+                <div class="espaciar">
+                    <p class="nom-producto">Hamburguesa </p>
+                    <p>x1</p>
+                    <p>L 100.00</p>
+                </div>
+            </div>
+            <div class="espaciar info-recibo">
+                <div>
+                    <h6>Subtotal</h6>
+                    <h6>IMP%</h6>
+                    <h6>Comision de envio</h6>
+                    <h6>Total</h6>
+                </div>
+                <div>
+                    <p>L 220.00</p>
+                    <p>L 10.00</p>
+                    <p>L 10.00</p>
+                    <p>L 240.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
