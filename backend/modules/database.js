@@ -1,22 +1,32 @@
 var mongoose = require('mongoose');
 require("dotenv").config();
-//Nombre BD, spotify
 
-let bd = 'spotify';
+let bd = 'fast';
+//pueto de conexion de la base de datos por defecto de mongo
 let port = '27017';
+//hosting o donde esta ubicado la base de datos en que equipo o servidor
 let host = 'localhost';
 
-class Database {
-    constructor() {
+class Database{
+    constructor(){
         this.conectar();
     }
 
-    conectar() {
-        mongoose.connect(process.env.MONGODB_URI)
-            .then(result => console.log('Se conecto a mongodb atlas'))
-            .catch(error => console.log(error));
-
+    conectar(){
+        //mongoose.connect(`mongodb://${host}:${port}/${bd}`)
+        mongoose.connect(
+            process.env.MONGODB_URI
+        )
+        .then(()=>{
+            console.log('Se conecto a mongodb Atlas');
+        })
+        .catch(error=>{
+            console.error(JSON.stringify(error));
+        });
     }
 }
 
 module.exports = new Database();
+
+
+//MONGODB_URI=mongodb+srv://edwar:edwar2022@fast-proyecto.p4xaw7g.mongodb.net/?retryWrites=true&w=majority

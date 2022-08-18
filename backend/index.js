@@ -3,21 +3,24 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 require("dotenv").config();
 
-var database = require('./modules/database');
-const { default: mongoose } = require('mongoose');
+var database = require('./modules/database'); 
+var motoristasRouter = require('./routes/motoristas-router');
+var administradoresRouter = require('./routes/administradores-router');
 
 var app = express();
-const puerto = 7777;
 
-app.use(cors()); //Permita peticiones de otros origenes.
+app.use(cors());
+app.use(express.static("public"));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true})); 
+app.use('/motoristas', motoristasRouter);
+app.use('/administradores', administradoresRouter);
 
-app.get('/', function (req, res) {
+
+app.get('/', function(req, res){
     res.send('Servidor backend en linea');
 });
 
-
-app.listen(puerto, function () {
-    console.log("Sevidor levantado")
+app.listen(7777, function(){
+    console.log("Servidor en Linea");
 });
-
-
