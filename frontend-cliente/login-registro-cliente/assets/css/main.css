@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'principal';
+    src: url('../fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'secundario';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+
 body {
     background-color: #dff6ff;
 }
@@ -55,11 +71,13 @@ body {
 }
 
 .formulario p {
+    font-family: 'principal';
     font-weight: bold;
     margin-bottom: 3px;
 }
 
 .caja {
+    font-family: 'secundario';
     border: 0;
     border-radius: 30px;
     height: 60px;
@@ -148,6 +166,7 @@ body {
 }
 
 .info p {
+    font-family: 'light';
     font-size: 1.2rem;
 
 }

@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'principal';
+    src: url('../fonts/Montserrat-Black.ttf');
+}
+
+@font-face {
+    font-family: 'secundario';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('../fonts/Montserrat-Light.ttf');
+}
+
+
 body {
     background-color: #dff6ff;
 }
@@ -50,6 +66,7 @@ body {
 }
 
 .info h1 {
+    font-family: 'principal';
     margin-bottom: 30px;
 }
 
@@ -60,6 +77,7 @@ body {
 }
 
 .buscar {
+    font-family: 'light';
     padding-left: 10px;
     border: none;
     border-radius: 10px;
@@ -107,6 +125,7 @@ body {
 }
 
 .tarjeta h5 {
+    font-family: 'secundario';
     margin-top: 10px;
     text-align: center;
 }
@@ -208,6 +227,7 @@ body {
 }
 
 .info-producto-2 {
+    font-family: 'secundario';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -220,7 +240,16 @@ body {
     margin-top: 20px;
 }
 
+.descripcion h1 {
+    font-family: 'secundario';
+}
+
+.descripcion p {
+    font-family: 'light';
+}
+
 .btn-orden {
+    font-family: 'secundario';
     margin-top: 20%;
     display: flex;
     justify-content: center;
@@ -282,6 +311,7 @@ body {
 }
 
 .btn-procesar button {
+    font-family: 'light';
     background-color: #1cb68e;
     color: #ffffff;
     border: solid 2px #979696;
@@ -292,6 +322,14 @@ body {
 .info-pedido {
     display: flex;
     justify-content: space-between;
+}
+
+.info-pedido h5 {
+    font-family: 'secundario';
+}
+
+.info-pedido p {
+    font-family: 'light';
 }
 
 .btn-vermas {
@@ -339,6 +377,14 @@ body {
     justify-content: space-between;
 }
 
+.espaciar h3 {
+    font-family: 'principal';
+}
+
+.espaciar p {
+    font-family: 'light';
+}
+
 .nom-producto {
     width: 25%;
 }
@@ -349,6 +395,7 @@ body {
 }
 
 .info-recibo h6 {
+    font-family: 'principal';
     margin-bottom: 20px;
 }
 
@@ -362,7 +409,12 @@ body {
 }
 
 .tarjeta-historial h5 {
+    font-family: 'secundario';
     margin-top: 10px;
+}
+
+.tarjeta-historial p {
+    font-family: 'light';
 }
 
 .info-estado {
@@ -376,10 +428,12 @@ body {
 }
 
 .info-estado h5 {
+    font-family: 'secundario';
     text-align: center;
 }
 
 .info-estado div {
+    font-family: 'light';
     display: flex;
     justify-content: space-around;
 
@@ -418,11 +472,23 @@ body {
     margin-top: 20px;
 }
 
+.perfil h1 {
+    font-family: 'principal';
+}
+
 .info-perfil {
     /* background-color: cyan; */
     padding-left: 20px;
     margin-top: 20px;
     height: 500px;
+}
+
+.info-perfil h5 {
+    font-family: 'secundario';
+}
+
+.info-perfil p {
+    font-family: 'light';
 }
 
 

@@ -197,3 +197,30 @@ function mostrarDetalleProducto(indice) {
         </div>`;
 }
 
+// Funcionalidad perfil.html
+
+function renderizarPerfil() {
+
+    console.log('Se renderizara el perfil')
+
+    let cliente = clientes[0];
+
+    document.getElementById('cliente').innerHTML =
+        `<div class="perfil">
+        <img src="${cliente.imagen}" alt="">
+        <h1>${cliente.nombre} ${cliente.apellido}</h1>
+    </div>
+
+    <div class="info-perfil">
+        <h5>Correo:</h5>
+        <p>${cliente.correo}</p>
+        <h5>Fecha de Nacimiento:</h5>
+        <p>${cliente.fechaNacimiento}</p>
+        <h5>Genero:</h5>
+        <p>${cliente.genero}</p>
+    </div>`;
+}
+
+renderizarPerfil();
+
+
