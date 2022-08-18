@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/admin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+}
+
+.principal {
+    margin-left: auto;
+}
+
+.inicio {
+    background-color: #06283D!important;
+    color: #1CB68E!important;
+}
+
+.btn-outline-success {
+    background-color: #1cb68dd8!important;
+    color: #fff!important;
+    border-color:#9ADACA!important;
+    border-radius: 10px!important;
+    width: 102px;
+    font-weight: 800;
+}
+
+.btn-outline-success:hover {
+    background-color: #1CB68E!important;
+    border-color:#1CB68E!important;
+}
+
+#menu {
+    background-color: rgba(0, 0, 0, 0.62); 
+    color:#fff;
+    height: 100vh;
+} 
+
+.logo2 {
+    width: 450px;
+}
+
+.admin {
+    display: flex;
+    padding: 200px;
+    justify-content: space-between;
+}
+
+.texto {
+    font-weight: 850;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoristas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/7f6237947d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="dividir">
+        <!-- MEMU LATERAL -->
+        <div id="menu">
+            <img src="assets/img/decoracion/Logo 1.png" alt="">
+            <div class="contenido-menu">
+                <h5>Administración FAST</h5>
+                <p>MENU</p>
+                <div onclick="irPerfil()">
+                    <div class="boton">Perfil</div>
+                </div>
+                <div onclick="irOrdenes()">
+                    <div class="boton">Ordenes</div>
+                </div>
+                <div>
+                    <div onclick="irMotoristas()">
+                        <div class="boton active">Motoristas</div>
+                    </div>
+                    <div class="btn-funciones">
+                        <p>- Agregar</p>
+                        <p>- Actualizar</p>
+                        <p>- Eliminar</p>
+                    </div>
+                </div>
+                <div onclick="irProductos()">
+                    <div class="boton">Productos</div>
+                </div>
+                <div onclick="irEmpresas()">
+                    <div class="boton">Empresas</div>
+                </div>
+                <div class="btn-salir">
+                    <p onclick="irLanding()">Cerrar Sesión <i class="fa-solid fa-right-from-bracket"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido">
+
+            <div class="barra">
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg bg-light navbar-dark nav-menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand mx-2" href="#">
+                            <input class="form-control me-2 tam-label" type="text"
+                                placeholder="Buscar empresas, productos, clientes, etc." aria-label="buscar">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <form class="d-flex inicio col-auto" role="search">
+                                <button class="btn btn-outline-success me-2" type="button"><i
+                                        class="fa-solid fa-user"></i></button>
+                                <div class="me-4">
+                                    <h5>Miguel Sanchez</h5>
+                                    <p>Administrador</p>
+                                </div>
+                                <button class="btn btn-outline-success me-2" type="button"><i
+                                        class="fa-solid fa-bell"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>    
+
+            <div class="contenido-ordenes table-responsive py-4">
+                <h1 class="py-2">Todos los motorista</h1>
+                <table class="table table-bordered tablas text-center py-4">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Motorista</th>
+                            <th scope="col">estado</th>
+                            <th scope="col">Cantidad de Entregas</th>
+                            <th scope="col">Codigo del motorista</th>
+                            <th scope="col">Ganancia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Juan</th>
+                            <td>Pendiente</td>
+                            <td>3 ordenes</td>
+                            <td>005</td>
+                            <td>Lps. 830.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Maritza</th>
+                            <td>Entregada</td>
+                            <td>3 ordenes</td>
+                            <td>001</td>
+                            <td>Lps. 830.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Manuel</th>
+                            <td>pendiente</td>
+                            <td>3 ordenes</td>
+                            <td>221</td>
+                            <td>Lps. 830.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">David</th>
+                            <td>Entregada</td>
+                            <td>3 ordenes</td>
+                            <td>221</td>
+                            <td>Lps. 830.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Alexia</th>
+                            <td>Entregada</td>
+                            <td>3 ordenes</td>
+                            <td>221</td>
+                            <td>Lps. 830.00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Raul</th>
+                            <td>Entregada</td>
+                            <td>3 ordenes</td>
+                            <td>221</td>
+                            <td>Lps. 830.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
